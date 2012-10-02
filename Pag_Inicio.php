@@ -6,6 +6,14 @@ and open the template in the editor.
 <?php 
  ini_set("display_errors","On");
     error_reporting(E_ALL);
+    
+    session_name("patty");
+    session_start();
+        if(isset($_SESSION['clave_ok']) && isset($_SESSION['usser'])){
+    
+    header("Location: Pag_Salida.php");
+    exit();
+}
  ?>
 
 <html>
@@ -18,22 +26,14 @@ and open the template in the editor.
         
          <img src= "Imagenes/foto-de-auto-electrico.jpg"/> 
                
-            	
-                <form title="Ingresar" action="LoginServlet" method="post">
-                	<table>
-                    	<tr>
-                        	<td>Usuario:</td><td><input type="text" value="" name="usuario"></td>
-                    	</tr>
-                        <tr>
-                        	<td>Clave:</td><td><input type="password" value="" name="clave"></td>
-                        </tr>
-                        <tr>
-                        	<td><input type="submit" value="Ingresar" button></td>
-                        
-                        </tr>  					
-                	</table>  				
-                </form> 
-        
+                    
+                <form method="post" action="Pag_Controlador.php">
+             <h3>PAGINA CENTRAL DE AUTOMOTORES DE LA PROVINCIA!</h3><br>
+            
+             <input type ="text" value ="Usuario" name="usser"/>
+             <input type ="text" value ="Contraseña" name="clave"/>
+           <input type="submit" value="Entrar"/>
+             </form>
 		
 
    <!--   <div id="menu">
