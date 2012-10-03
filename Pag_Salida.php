@@ -1,12 +1,6 @@
 <?php
 
-
-
-ini_set("display_errors", "on");
-error_reporting(E_ALL); 
-
-session_name("patty");
-session_start();
+ require 'muestra_errores.php';
 
 
 if(!isset($_SESSION['clave_ok'])){
@@ -16,6 +10,6 @@ if(!isset($_SESSION['clave_ok'])){
 }
 ?>
 
-<h2> Bienvenidooooooo!!!!!!!</h2>
+<h2>Panel de Control</h2>
 
  <a href="Pag_Cerrar_Sess.php?salir=dale">Cerrar session</a>

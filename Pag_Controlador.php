@@ -1,10 +1,6 @@
 <?php
 
-ini_set("display_errors", "on");
-error_reporting(E_ALL); 
-
-session_name("patty");
-session_start();
+ require 'muestra_errores.php';
 
 if(isset($_SESSION['clave'])){
     
