@@ -10,8 +10,9 @@ if(isset($_POST) && $_POST['Guardar']){
       $categoria= $_POST['categoria'];
 
 $result1= consultar("INSERT INTO Choferes (Nombre, Licencia, Domicilio, Vencimiento_Lic, Clase) VALUES ('$nombre', '$licencia', '$domicilio', '$vencimiento_carnet', '$categoria')", $conectar);
+
+    header("location: ..Pag_Salida.php");
 }
 
-    header ("location: ../vista/Inicio.php");
 
 ?>
