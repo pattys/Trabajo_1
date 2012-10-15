@@ -4,7 +4,7 @@
 
 if(isset($_SESSION['clave'])){
     
-    header("Location: Pag_Salida.php");
+    header("Location:vista/Pag_Salida.php");
     exit();
 }
 
@@ -14,16 +14,16 @@ if(isset($_POST['clave'])AND isset ($_POST['usser'])){
        
         $_SESSION['clave_ok']="si";
         $_SESSION['usser']="si";
-        header("Location: Pag_Salida.php");
+        header("Location: vista/Pag_Salida.php");
         
         
     }else{
-        header("Location: Pag_Inicio.php");
+        header("Location: index.php");
         exit();
         
         }
     
 }else{
-    header("Location: Pag_Inicio.php");
+    header("Location: index.php");
     exit();
 }

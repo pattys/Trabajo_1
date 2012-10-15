@@ -1,0 +1,83 @@
+/* 
+    Document   : estilos
+    Created on : 14-10-2012, 01:51:29 PM
+    Author     : patty
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+background-image: url('Imagenes/camioneta.jpg'); 
+}
+
+
+#cabecera{
+border-radius: 20px 20px 0px 0px;
+padding: 20px;
+margin-left: 10px;
+background-color: #E2E6FA;
+filter: alpha(opacity=80); 
+-moz-opacity:0.8;  
+-khtml-opacity: 0.8;
+opacity: 0.8;
+width: 90%;
+height: 100px;
+}
+
+#text_cabecera{
+font-family: Arial;
+text-align: left;
+margin-top: 10px;
+font-size: 25px;
+text-shadow: 1px 1px 2px #6C6C6C;
+float: left;
+}
+
+
+#logo_cabecera{
+float: right;
+border: 0;
+margin-right: 10px;
+}
+
+#contenedor_principal{
+padding: 20px;
+margin-left: 10px;
+background-color: #E2E6FA; 
+width: 90%;
+height: 400px;
+}
+
+#img_principal{
+margin-left:2em; 
+margin-top: 2em;
+border-radius: 10px 10px 10px 10px;
+}
+
+#form_logeo{
+margin-top: 2em;
+float: left;
+padding: 20px;
+border-radius: 10px 10px 10px 10px;
+margin-left:2em;
+border: solid 1px #CCCCCC;
+background: #ffffff;
+font-family: Arial;
+}
+
+#contenedor_footer{
+font-family: Arial;
+margin-left: 10px;
+border: solid 1px #CCCCCC;
+border-radius: 0px 0px 10px 10px; 
+width: 90%; 
+padding: 20px;
+}
+
+form{
+font-family: ;
+}

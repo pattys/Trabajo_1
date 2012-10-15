@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/cbgapi.loaded_0"></script><link rel="stylesheet" type="text/css" href="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/c33a3755.css" media="all">
+<script gapi_processed="true" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/bf1269f9.js"></script>
+	<meta charset="UTF-8">
+
+	<title>Tutorial: Como usar la API de Google Font | Kabytes</title>
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	
+	<link href="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/css.css" rel="stylesheet" type="text/css">
+	
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="http://www.kabytes.com/wp-content/themes/yoriyoi/css/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="http://www.kabytes.com/wp-content/themes/yoriyoi/css/ie7.css" /><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="http://www.kabytes.com/wp-content/themes/yoriyoi/css/ie8.css" /><![endif]-->
+	
+	
+
+	
+	<!--[if lt IE 9]>
+		<script src="http://www.kabytes.com/wp-content/themes/yoriyoi/js/html5.js"></script>
+	<![endif]-->
+
+	<!--[if IE 6]>
+		<script src="http://www.kabytes.com/wp-content/themes/yoriyoi/js/DD_belatedPNG.js"></script>
+		<script>
+			DD_belatedPNG.fix('.png_bg, .topbar ul li, #main-nav ul li, #main-nav li a, .more-link');
+		</script>
+	<![endif]-->
+	
+	
+	
+	<script type="text/javascript" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/jquery.js"></script>
+	
+	<link rel="pingback" href="http://www.kabytes.com/xmlrpc.php">	
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.kabytes.com/feed/">
+	
+						<meta property="og:title" content="Tutorial: Como usar la API de Google Font">
+			<meta property="og:type" content="article">
+			<meta property="og:url" content="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/">
+			<meta property="og:image" content="http://www.kabytes.com/wp-content/themes/yoriyoi/thumb.php?src=http://www.kabytes.com/wp-content/uploads/2010/05/tutorial-google-fonts.png&amp;h=150&amp;w=150&amp;zc=1">
+			<meta property="og:site_name" content="Kabytes">
+			<meta property="fb:admins" content="771680981">
+			<meta property="og:description" content="Si google tiene una característica buena para los programadores es que todas sus APIs son muy fáciles de implementar, desde la API de Google Maps que esta tendencia se viene repitiendo, y por suerte para nosotros la API de Google Font no es la excepción. Hoy me puse a jugar un poco con ella y [...]">
+				
+
+	<link rel="alternate" type="application/rss+xml" title="Kabytes » Tutorial: Como usar la API de Google Font Comments Feed" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/feed/">
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.kabytes.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.kabytes.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Galería de jQuery para diseñadores" href="http://www.kabytes.com/diseno/galeria-de-jquery-para-disenadores/">
+<link rel="next" title="CSS Reset básico" href="http://www.kabytes.com/programacion/css-reset-basico/">
+<meta name="generator" content="WordPress 3.4.2">
+<link rel="shortlink" href="http://www.kabytes.com/?p=14209">
+
+<!-- All in One SEO Pack 1.6.15 by Michael Torbert of Semper Fi Web Design[86,150] -->
+<meta name="description" content="Si google tiene una característica buena para los programadores es que todas sus APIs son muy fáciles de implementar, desde la API de Google Maps que esta">
+<link rel="canonical" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/">
+<!-- /all in one seo pack -->
+	
+<style type="text/css" media="screen" id="delic-button-css">div.delic-tall{font-family:Arial,Tahoma;font-size:11px;width:50px;}div.delic-tall a.icon,div.delic-tall a.count{color:#FFF!important;display:block;-moz-border-radius:3px;-webkit-border-radius:3px;outline:none!important;text-decoration:none!important;}div.delic-tall a.icon{background:#fff;border:1px solid #ccc;height:38px;overflow:hidden;position:relative;direction:ltr;}div.delic-tall a.icon:hover{border-color:#666;}div.delic-tall a.count{margin-top:2px;text-align:center;font-size:12px;line-height:18px;height:18px;background:#3274D0;border:#3274D0 1px solid;text-shadow:#2A5580 1px 1px 0;}div.delic-tall a.count:hover{background:#369;border-color:#369;}div.delic-tall a.count:active{background:#000;border:#333 1px solid;text-shadow:#222 1px 1px 0;outline:none;}div.delic-wide{font-family:Arial,Tahoma;font-size:11px;width:76px;}div.delic-wide a.icon,div.delic-wide a.count{display:block;float:left;line-height:18px;border:#666 solid 1px;-webkit-border-radius:3px;-moz-border-radius:3px;margin-right:1px;outline:none!important;text-decoration:none!important;height:18px;overflow:hidden;color:#FFF!important;}div.delic-wide a.icon{background:#fff;border-color:#ccc;width:20px;position:relative;direction:ltr;}div.delic-wide a.icon:hover{border-color:#666;}div.delic-wide a.count{font-size:12px;background:#3274D0;border-color:#3274D0;width:50px;text-align:center;text-shadow:#2A5580 1px 1px 0;}div.delic-wide a.count:hover{background:#369;border-color:#369;text-shadow:#369 1px 1px 0;}div.delic-wide a.count:active{background:#000;border-color:#333;text-shadow:#222 1px 1px 0;}div.delic-tall a.icon:hover *,div.delic-wide a.icon:hover *{opacity:.85;filter:alpha(opacity=85);}div.delic-tall a.icon *,div.delic-wide a.icon *{width:50%;height:50%;position:absolute;margin:0!important;}div.delic-tall h1,div.delic-wide h1{background:#3274D0;left:50%;top:0;}div.delic-tall h2,div.delic-wide h2{background:#000;left:0;top:50%;}div.delic-tall h3,div.delic-wide h3{background:#D3D2D2;left:50%;top:50%;}div.delic-tall a.count i,div.delic-wide a.count i{display:none;font-style:normal;}div.delic-tall a.count b,div.delic-wide a.count b{font-weight:normal}</style></head>
+<body data-twttr-rendered="true">
+
+<div id="layer-a" class="png_bg">
+	<div id="layer-b" class="png_bg">
+		<header id="header" class="main-structure png_bg">
+			<div id="ribbon-right" class="png_bg">
+				<div class="container">
+					<div id="logo" class="left">
+						<a href="http://www.kabytes.com/">Kabytes</a>
+					</div>
+					<!--/logo-->
+					<div class="topbar right">
+						<ul id="menu-secciones" class=""><li id="menu-item-25546" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25546"><a href="http://www.kabytes.com/nosotros/">Nosotros</a></li>
+<li id="menu-item-25545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25545"><a href="http://www.kabytes.com/publicidad/">Publicidad</a></li>
+<li id="menu-item-25547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25547"><a href="http://www.kabytes.com/contacto/">Contacto</a></li>
+<li id="menu-item-25544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25544"><a href="http://www.kabytes.com/politica-de-privacidad/">Políticas</a></li>
+</ul>					</div>
+					<!--/tobpar-->
+					<div class="clear">&nbsp;</div>
+					<nav id="main-nav">
+						<ul id="menu-navegacion" class=""><li id="menu-item-25549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25549"><a href="http://www.kabytes.com/programacion-web/">Programación Web</a></li>
+<li id="menu-item-25548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25548"><a href="http://www.kabytes.com/recursos-graficos/">Recursos Gráficos</a></li>
+<li id="menu-item-25550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25550"><a href="http://www.kabytes.com/moviles/">Móviles</a></li>
+<li id="menu-item-25592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25592"><a href="http://www.kabytes.com/media/">Media</a></li>
+<li id="menu-item-25593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25593"><a href="http://www.kabytes.com/user-interface/">User Interface</a></li>
+<li id="menu-item-25594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25594"><a href="http://www.kabytes.com/social-media/">Social Media</a></li>
+<li id="menu-item-25595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25595"><a href="http://www.kabytes.com/dispositivos/">Dispositivos</a></li>
+<li id="menu-item-25596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25596"><a href="http://www.kabytes.com/programas-de-diseno/">Programas de diseño</a></li>
+</ul>					</nav>
+					<div id="search-box">
+						<a class="png_bg"><img class="png_bg" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/icon-search.png" alt="Buscar"></a>
+						<form style="display:none;" action="http://www.kabytes.com" method="get" role="search">
+							 <input name="s" id="search-input" type="text">
+							 <input value="buscar" id="search-submit" type="submit">
+						</form>
+					</div>
+				</div>
+				<!--/container-->
+			</div>
+		</header>
+<div class="container">
+	<div id="wrap">
+	
+		<section id="content" class="single">
+						<article class="post" id="post-14209">
+				<header>
+					<h1><a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/">Tutorial: Como usar la API de Google Font</a></h1>
+					<div class="meta">
+						<span class="meta-author author-h png_bg"><a href="http://www.kabytes.com/author/Pablo">Pablo</a></span>
+						<time pubdate="" datetime="2010-05-20" class="meta-date png_bg">Jueves 20 de Mayo de 2010 a las 15:21</time>
+					</div>
+				</header>
+				<div class="advertise">
+					
+				</div>
+				<div class="post-entry">
+					<p>Si google tiene una característica buena para los programadores 
+es que todas sus APIs son muy fáciles de implementar, desde la API de 
+Google Maps que esta tendencia se viene repitiendo, y por suerte para 
+nosotros la API de Google Font no es la excepción.</p>
+<p>Hoy me puse a jugar un poco con ella y quería comentarle a modo de 
+guía básica como funcionar, para que sirve y sobre todo como implementar
+ esta fantástica herramienta. Comencemos.</p>
+<p style="text-align: center;"><img class="size-full wp-image-14223 aligncenter" style="border: none;" title="tutorial google fonts" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/tutorial-google-fonts.png" alt="tutorial google fonts" height="74" width="525"></p>
+<h2>¿Para que sirve la API de Google Font?</h2>
+<p>Principalmente para que podamos utilizar cualquier familia de 
+tipografías en nuestro sitio web, independientemente de las que son 
+consideradas por defectos en los navegadores más populares.</p>
+<p>Siempre fue una critica hacia los navegadores las pocas tipografías 
+aceptadas por defecto, pero desde hace un tiempo existen varias 
+alternativas como <a title="FLIR" href="http://www.kabytes.com/tutoriales/tutorial-flir-como-utilizar-cualquier-tipografia-en-nuestro-sitio/">FLIR</a>
+ para que los diseñadores puedan implementar cualquier familia de 
+fuentes. No obstante muchas de estas alternativas tienen varias contras,
+ como su compleja implementación.</p>
+<p>Todos estos pormenores hicieron que CSS se tome en serio el asunto y 
+casi por arte de magia en su versión 3 logre implementar font-face, una 
+propiedad que permite definir cualquier tipografía en base al archivo 
+fuente de la misma. Y es ahi donde justamente donde Google se puso a 
+trabajar brindando un api para hacer el trabajo sucio.</p>
+<h2>¿Cuando debería utilizar la API de Google Font?</h2>
+<p>Aquí vamos a encontrarnos con varias opciones y cada uno debería 
+poder determinar cuando merece la pena usar un API y cuando no. A mi me 
+gusta evaluarlo de la siguiente forma y decido utilizar un API cuando:</p>
+<ul>
+<li>Necesito utilizar distintas familias de tipografías no instaladas 
+por defecto y no quiero tener que trabajar en subir los archivos de las 
+fuentes, ni definirlas manualmente en mi CSS.</li>
+<li>Cuando quiero ahorrar transferencia. Ya que la transferencia 
+ocasionada por el archivo de la tipografías corre por cortesía de 
+Google.</li>
+<li>Cuando quiero velocidad. Es similar al caso anterior, pero aquí 
+hagan pruebas, muchas veces la paralelización de descargas desde 
+distintos host acelera considerablemente el tiempo de descarga de un 
+sitio web, otras veces….no tanto.</li>
+</ul>
+<h2>Bien, me gusto ¿Que necesito para empezar?</h2>
+<p>Solo tiempo y un poco de ganas.</p>
+<p>Ademas y antes de comenzar te voy a recomendar que mires la <a title="Webfonts" href="http://code.google.com/webfonts">lista completa de tipografías incluidas en el API</a> que si bien no son millones son unas cuantas, numero que muy posiblemente aumente en los próximos meses.</p>
+<h2>¿Como puede implementar el API en mi sitio?</h2>
+<p>Muy pero muy fácil, con una simple linea de código.</p>
+<pre>&lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=<var>Font+Name</var>"&gt;</pre>
+<p>No es muy difícil darse cuenta que lo único que tenemos que cambiar es la <em>Font+Name</em>
+ para habilitar la tipografía en nuestro sitio. Si lo deseamos y 
+queremos usar más de una tipo vamos a indicarlas como parametros 
+separados por <strong>|</strong></p>
+<p>Por ejemplo vamos a activar las tipografías Tangerine, Inconsolata y Droid Sans:</p>
+<pre>http://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans</pre>
+<p>Luego vamos a definir la nueva tipografia instalada en nuesta hoja de estilo de la siguiente forma:</p>
+<pre>h1{font-family: 'Tangerine', serif; color: green}</pre>
+<p>Es decir, que prácticamente estaremos trabajando con nuestra hoja de estilo como lo hicimos siempre.</p>
+<h2>¿Un ejemplo de utilización completo?</h2>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Ejemplo de uso de la API de Google Fonts&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css"
+href="http://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans"&gt;
+
+&lt;style&gt;
+body, html {
+margin: 0;
+padding: 0;
+background: #ccc;
+text-align: center;
+font-size:30px;
+font-family: arial; }
+h1, h2, h3{margin-bottom:10px; padding:0;}
+h1{font-family: 'Tangerine', serif; color: green}
+h2{font-family: 'Inconsolata', serif; color: blue}
+h3{font-family: 'Droid Sans', serif;color: red}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Escribiendo con Tangerine!&lt;/h1&gt;
+&lt;h2&gt;Escribiendo con Inconsolata!&lt;/h1&gt;
+&lt;h3&gt;Escribiendo con Droid Sans!&lt;/h1&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<p>Y el resultado lo pueden <a title="Ejemplo Api Google" href="http://www.kabytes.com/cursos/css3/api-google-font.html">ver online directamente</a>.</p>
+<p>Utilizar la API de Google Fonts, es realmente fácil y por las pruebas
+ que hice es bastante rápido el renderizado de las distintas familias de
+ tipografías, por lo que su uso es bastante recomendado.</p>
+<h2>¿Desventajas de uso?</h2>
+<p>Si bien estoy bastante contento con el resultado no creo que por el 
+momento la API de Google Fonts reemplace a los sistemas que se vienen 
+utilizando hasta el momento para generar compatibilidad con tipografías 
+no instaladas por defecto, las principales razones son:</p>
+<ul>
+<li>No hay todavía disponibles muchas familias de fuentes.</li>
+<li>Muchas personas no quieren depender de un tercero a la hora de servir sus sitios.</li>
+<li>Si el API falla todo nuestro sitio va a mostrar las tipografias por 
+defecto con un resultado probablemente bastante desagradable (aunque 
+esto se puede configurar desde el CSS como siempre)</li>
+<li>Si el navegador no tiene compatibilidad con la propiedad font-face también va a mostrar una fuente por defecto.</li>
+</ul>
+<h2>Finalmente…</h2>
+<p>Si bien tenemos cosas a favor y en contra, jugar un poco con Google 
+Font me gusto mucho, creo que es una API con futuro si se mejora el 
+repositorio de archivos tipográficos, brindando más posibilidades que 
+las pocas que hay hoy en día.</p>
+				</div>
+				
+				<div class="advertise">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-0805545295216060";
+					/* 300 x 250 Single (KB) */
+					google_ad_slot = "2704148552";
+					google_ad_width = 300;
+					google_ad_height = 250;
+					//-->
+					</script>
+					<script type="text/javascript" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/show_ads.js">
+					</script><ins style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><iframe allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" vspace="0" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="250" scrolling="no" width="300"></iframe></ins></ins>
+				</div>
+				
+				<div id="about-the-author">
+					<div class="box-layer png_bg">
+						<img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/author-ribbon.png" alt="" class="author-ribbon">
+						<img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/262a4da3c0c9ee096f80d5a3a794b208_002.jpg" class="avatar avatar-90 photo" height="90" width="90">						<h4>Pablo</h4>
+						<p>Programador desde hace más de 11 años, adicto a internet, 
+cafeinómano, fanático de la información, intento de emprendedor, trabaja
+ de forma compulsiva solo en lo que ama. Sueña con tener una aplicación 
+con más de 1 millón de usuarios.</p>
+						<div class="clear"></div>
+					</div>
+				</div>
+				
+				<div class="social">
+					<span class="social-facebook">
+						<iframe src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/like.htm" style="border:none; overflow:hidden; width:150px; height:21px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+					</span>
+					<span class="social-twitter">
+						<iframe data-twttr-rendered="true" title="Twitter Tweet Button" style="width: 120px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/tweet_button.htm" allowtransparency="true" frameborder="0" scrolling="no"></iframe><script type="text/javascript" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/widgets.js"></script>
+					</span>
+					<span class="social-google">
+						<div id="___plusone_0" style="height: 15px; width: 70px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/fastbutton.htm" name="I0_1350327500979" id="I0_1350327500979" vspace="0" tabindex="0" style="position: static; top: 0px; width: 70px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div>
+					</span>
+					<span class="social-delicius">
+						<div class="delic-wide"><a href="http://delicious.com/save?v=5&amp;url=http%3A%2F%2Fwww.kabytes.com%2Ftutoriales%2Ftutorial-como-usar-la-api-de-google-font%2F&amp;title=Tutorial%3A%20Como%20usar%20la%20API%20de%20Google%20Font" class="icon" target="delicious"><h1></h1><h2></h2><h3></h3></a><a href="http://delicious.com/save?v=5&amp;url=http%3A%2F%2Fwww.kabytes.com%2Ftutoriales%2Ftutorial-como-usar-la-api-de-google-font%2F&amp;title=Tutorial%3A%20Como%20usar%20la%20API%20de%20Google%20Font" class="count" target="delicious"><i>Save</i><b>Save</b></a><div style="clear:both"></div></div>
+					</span>
+				</div>
+				
+				<footer>
+					<span class="meta-tags"><a href="http://www.kabytes.com/tag/api/" rel="tag"><span></span>API</a><a href="http://www.kabytes.com/tag/google/" rel="tag"><span></span>Google</a></span>
+					<span class="meta-comments png_bg">Comentarios <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comments" class="png_bg" title="Comentarios en Tutorial: Como usar la API de Google Font">17</a></span>
+				</footer>
+				
+			</article>
+						
+			<div id="related-posts">
+				<h3>Entradas relacionadas</h3>
+				<ul class="related_post"><li><a href="http://www.kabytes.com/programacion/reemplazar-los-iconos-sociales-de-facebook-twitter-y-google/" title="Reemplazar los iconos sociales de: Facebook, Twitter, y Google +">Reemplazar los iconos sociales de: Facebook, Twitter, y Google +</a></li><li><a href="http://www.kabytes.com/diseno/elementos-ui-con-los-colores-de-google/" title="Elementos UI con los colores de Google+">Elementos UI con los colores de Google+</a></li><li><a href="http://www.kabytes.com/diseno/botones-estilo-google-con-css/" title="Botones estilo Google+ con CSS">Botones estilo Google+ con CSS</a></li><li><a href="http://www.kabytes.com/actualidad/paginacion-mundialista-en-google/" title="Paginación mundialista en Google">Paginación mundialista en Google</a></li><li><a href="http://www.kabytes.com/google/trucos-para-busquedas-en-google/" title="Trucos para búsquedas en Google">Trucos para búsquedas en Google</a></li><li><a href="http://www.kabytes.com/software/fundamentos-para-seleccionar-un-navegador-en-una-netbook/" title="Fundamentos para seleccionar un navegador en una Netbook">Fundamentos para seleccionar un navegador en una Netbook</a></li></ul>			</div>
+			
+			<div id="comments">
+
+
+<!-- You can start editing here. -->
+
+	<h3 id="comments-title">Comentarios</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="comment-list">
+	   
+ <li class="comment even thread-even depth-1" id="li-comment-60422">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/2c20d50f065f09cf5db769f2267d0f33.jpg" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-60422">20.05.2010 20:00</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author"><a href="http://lamusicadigitalysuputamadre.blogspot.com/" rel="external nofollow" class="url">José GDF</a></span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=60422#respond" onclick='return addComment.moveForm("comment-60422", "60422", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>Es interesante. Pero cuando se agreguen más fuentes, que supongo que se hará, entonces sí será algo a tener en cuenta.</p>
+		</div>
+
+     </div>
+   
+</li>
+   
+ <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-60530">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/cd8920fec61d086e7b06857aa4764823.png" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-60530">22.05.2010 15:50</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author">Maki</span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=60530#respond" onclick='return addComment.moveForm("comment-60530", "60530", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>Que falle la API tampoco sería el fin, con indicar una alternativa en font-family debería bastar para evitar el ancho fijo</p>
+		</div>
+
+     </div>
+   
+</li>
+   
+ <li class="comment even thread-even depth-1" id="li-comment-86506">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/54018323566b8608c15fae8bf0b29b86.png" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-86506">14.03.2011 17:00</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author"><a href="http://www.voipsystemscr.com/" rel="external nofollow" class="url">Jose Tapia</a></span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=86506#respond" onclick='return addComment.moveForm("comment-86506", "86506", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>Excelente artículo, ya las estoy probando</p>
+		</div>
+
+     </div>
+   
+</li>
+   
+ <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-128776">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/559b95d8d7ab19544778fc5fe0eda205.png" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-128776">10.11.2011 16:43</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author">lucas</span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=128776#respond" onclick='return addComment.moveForm("comment-128776", "128776", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>Excelente, a usar la API entonces</p>
+		</div>
+
+     </div>
+   
+</li>
+   
+ <li class="comment even thread-even depth-1" id="li-comment-235671">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/188ffc22b13e9af81daac90c4860071f.png" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-235671">17.02.2012 13:52</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author"><a href="http://cnv-vitarte.tk/" rel="external nofollow" class="url">max henrry</a></span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=235671#respond" onclick='return addComment.moveForm("comment-235671", "235671", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>las fuentes de google son pocas creo que no llega ni a 500 fuentes. como agregar mas fuentes oh uno mismo subirlas?</p>
+		</div>
+
+     </div>
+   
+</li>
+   
+ <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-287699">
+     <div class="left">
+         <img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/73f4a0cca3eecfd444aa88479ef3173e.png" class="avatar avatar-70 photo" height="70" width="70">		 <a href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#comment-287699">25.06.2012 6:09</a>
+      </div>
+	  <div class="right">
+		<header>
+			<span class="the-author">Init[0]</span>
+			<span class="the-reply-link"><a class="comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/?replytocom=287699#respond" onclick='return addComment.moveForm("comment-287699", "287699", "respond", "14209")'>Responder</a></span>
+					</header>
+		
+		<div class="comment-entry">
+			
+			<p>Mi experiencia es que si estás en un entorno en el que se navegue 
+vía proxy (cualquier entorno empresarial serio) y en el proxy es se 
+filtra esta url, la web que la utilice puede tardar una eternidad en 
+cargar.</p>
+<p>Por otro lado si tu web va por HTTPS, te puedes encontrar que 
+aparecen mensajes del tipo “parte del contenido de esta web es 
+inseguro…”</p>
+		</div>
+
+     </div>
+   
+</li>
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+<div id="respond">
+
+<h3>Realizar un comentario</h3>
+
+<div id="cancel-comment-reply"> 
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.kabytes.com/tutoriales/tutorial-como-usar-la-api-de-google-font/#respond" style="display:none;">Haz clic para cancelar la respuesta.</a></small>
+</div> 
+
+
+<form action="http://www.kabytes.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input name="author" id="author" size="22" tabindex="1" aria-required="true" type="text"><label for="author" class="for-author"><small>Nombre<span>*</span></small></label></p>
+
+<p><input name="email" id="email" size="22" tabindex="2" aria-required="true" type="text"><label for="email" class="for-email"><small>Email<span>*</span></small></label></p>
+
+<p><input name="url" id="url" size="22" tabindex="3" type="text"><label for="url" class="for-url"><small>URL</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> Puedes usar estas etiquetas: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+
+<p class="submit-space-box"><span class="submit-space"><input name="submit" id="submit" tabindex="5" class="button" value="publicar comentario" type="submit"><img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/post-comment-icon.png" alt="" id="submit-comment-icon" class="png_bg"></span>
+<input name="comment_post_ID" value="14209" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+ 
+</p>
+<p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="48f976299c" type="hidden"></p>
+
+	<p style="" class="subscribe-to-comments">
+	<input name="subscribe" id="subscribe" value="subscribe" style="width: auto; float: left; margin: -5px 10px 0 10px;" type="checkbox">
+	<label for="subscribe">Recibir notificación vía e-mail de los comentarios.</label>
+	</p>
+
+
+
+</form>
+
+</div>
+
+
+</div>		
+		</section>
+	
+	<aside id="sidebar" class="main-structure">
+	<div class="widget" id="ads">
+		<div class="ads-300">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-0805545295216060";
+			/* 300x250 Sidebar (KB) */
+			google_ad_slot = "1016203065";
+			google_ad_width = 300;
+			google_ad_height = 250;
+			//-->
+			</script>
+			<script type="text/javascript" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/show_ads.js">
+			</script><ins style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><iframe allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" vspace="0" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="250" scrolling="no" width="300"></iframe></ins></ins>
+		</div>
+		<div class="ads-125">
+			<a href="#"><img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/banner-125.jpg" alt=""></a>
+			<a href="#"><img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/banner-125.jpg" alt=""></a>
+		</div>
+	</div>
+	
+	<div class="widget" id="suscription">
+		<div class="box">
+		<div class="box-layer png_bg">
+			<h3 class="png_bg">Suscripcion</h3>
+			<p>En Kabytes.com hablamos sobre: tecnología, software, diseño, usabilidad y programación. Suscríbete para no perderte de nada.</p>
+			<h5>Suscipcion por correo electronico</h5>
+			<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=kabytes','popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+				<input placeholder="user@domain.com" class="text-email" name="email" type="text">
+				<input value="kabytes" name="uri" type="hidden">
+				<input name="loc" value="es_ES" type="hidden">
+				<span class="suscription-sidebar-space">
+					<input class="submit" value="suscribir" type="submit">
+					<img class="png_bg" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/icon-email.png" alt="">
+				</span>
+			</form>
+			<h5>Suscripcion por RSS</h5>
+			<a href="http://feeds.feedburner.com/kabytes" target="_blank" class="button button-grey">encontranos en tu lector de feeds <img class="png_bg" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/icon-rss.png" alt=""></a>
+		</div>
+		</div>
+	</div>
+	
+		
+	<div class="widget" id="last-posts">
+		<div class="box">
+		<div class="box-layer png_bg">
+			<h3 class="png_bg">Ultimos posts</h3>
+			<ul>
+							<li><span>15.10.2012</span><h6><a href="http://www.kabytes.com/diseno/iconos-tipograficos-de-aplicaciones-populares/">Iconos tipográficos de aplicaciones populares</a></h6></li>
+							<li><span>15.10.2012</span><h6><a href="http://www.kabytes.com/diseno/plantillas-gratis-para-realizar-bosquejos-para-web-moviles-y-tablets/">Plantillas gratis para realizar bosquejos para web, móviles y tablets</a></h6></li>
+							<li><span>15.10.2012</span><h6><a href="http://www.kabytes.com/diseno/iconos-vectoriales-sketch/">Iconos vectoriales sketch</a></h6></li>
+							<li><span>12.10.2012</span><h6><a href="http://www.kabytes.com/diseno/argine-corto-de-animacion/">Argine [Corto de Animación]</a></h6></li>
+							<li><span>11.10.2012</span><h6><a href="http://www.kabytes.com/desarrollo/bookblock-slider-estilo-libro-en-css3/">BookBlock: slider estilo libro en CSS3</a></h6></li>
+				
+			</ul>	
+		</div>
+		</div>
+	</div>	
+	
+	<div class="widget" id="blogroll">
+		<div class="box">
+		<div class="box-layer png_bg">
+			<h3 class="png_bg">Blogroll</h3>
+			<ul>
+				<li><a href="http://alt-tab.com.ar/" title="Alt-tab">Alt-tab</a></li>
+<li><a href="http://www.codigogeek.com/" title="Codigo Geek">Codigo Geek</a></li>
+<li><a href="http://www.loogic.com/">Loogic</a></li>
+<li><a href="http://www.nahuelsanchez.com/" title="El blog de Nahuel">Nahuel Sanchez</a></li>
+<li><a href="http://www.online.com.es/">Online</a></li>
+<li><a href="http://www.portafolioblog.com/">Portafolio</a></li>
+<li><a href="http://www.quelapaseslindo.com.ar/" title="Que la pases lindo!">Que la pases lindo!</a></li>
+<li><a href="http://www.rubencalvo.com/">Ruben Calvo</a></li>
+<li><a href="http://spamloco.net/">Spamloco</a></li>
+ 	
+			</ul>	
+		</div>
+		</div>
+	</div>		
+	
+	<div class="widget featured" id="featured-1">
+	<img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/ribbon-default.png" alt="" class="ribbon png_bg">
+		<div class="box">
+			<img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/featured-1.jpg" alt="">
+			<div>
+				<h4>Próximamente</h4>
+				<p>En poco tiempo estaremos anunciando un nuevo proyecto.</p>
+			</div>	
+		</div>
+	</div>	
+	<div class="widget" id="especiales">
+		<div class="box">
+		<div class="box-layer png_bg">
+			<h3 class="png_bg">Especiales</h3>
+			<ul>
+				
+			</ul>	
+		</div>
+		</div>
+	</div>
+	
+</aside>	
+	</div>
+	<!--/wrap-->
+</div>
+<!--/container-->
+
+</div> <!-- /layer-b -->
+
+<div id="max-bottom">
+	<div id="max-engraving">
+		<div class="container">
+
+			<div id="bottom">
+				<div id="bottom-suscribite" class="box-bottom left">
+					<h4>Suscribite</h4>
+					<div class="box-grey">
+						<p class="blockquote png_bg">En Kabytes.com hablamos sobre: tecnología, software, diseño, usabilidad y programación. Suscríbete para no perderte de nada.</p>
+					</div>
+					<div id="suscripcion-email">
+						<p class="subtitle">Suscripcion por correo electronico</p><p>
+						</p><form class="left" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=kabytes','popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+							<input placeholder="user@domain.com" class="text-email" name="email" type="text">
+							<input value="kabytes" name="uri" type="hidden">
+							<input name="loc" value="es_ES" type="hidden">
+							<span class="suscripcion-email-space">
+								<input class="button-orange button-email button" value="suscribir" type="submit">
+								<img id="image-email" class="png_bg" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/icon-email.png" alt="">
+							</span>
+						</form>						
+					</div>
+					<div id="suscripcion-rss">
+						<p class="subtitle">Suscripcion por rss</p><p>
+						<a href="http://feeds.feedburner.com/kabytes" target="_blank" class="button button-orange button-rss"><span>encontranos en tu lector de feeds</span><img src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/icon-rss.png" alt="" class="png_bg"></a>
+					</p></div>
+					<a href="http://www.mediatemple.net/go/order/?refdom=kabytes.com" class="mediatemple-ref"><img class="png_bg" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/mediatemple-logo.png" alt="Powered by (mt)" title="Powered by (mt)"></a>
+				</div>
+				<div id="bottom-recomendados" class="box-bottom left png_bg">
+					<h4>Recomendados</h4>
+					<div class="box-grey">
+						<ul>
+													<li class="png_bg">
+								<span>&nbsp;</span>
+								<h5><a href="http://www.kabytes.com/diseno/themes-para-wordpress-formato-grid/">Themes para WordPress formato grid</a></h5>
+								<p><a href="http://www.kabytes.com/diseno/themes-para-wordpress-formato-grid/"> Uno de los estilos que más están ganando lugar en el mundo de los sitios web de todo [...]</a></p>
+							</li>
+													<li class="png_bg">
+								<span>&nbsp;</span>
+								<h5><a href="http://www.kabytes.com/hardware/review-espanol-natural-ergonomic-keyboard-4000/">Mi nuevo teclado: Natural Ergonomic Keyboard 4000</a></h5>
+								<p><a href="http://www.kabytes.com/hardware/review-espanol-natural-ergonomic-keyboard-4000/"> Uno de mis grandes temas pendientes era el de comprar un teclado nuevo, hasta hace unos [...]</a></p>
+							</li>
+													<li class="png_bg">
+								<span>&nbsp;</span>
+								<h5><a href="http://www.kabytes.com/programacion/novedades-de-php-5-4-0/">Novedades de PHP 5.4.0</a></h5>
+								<p><a href="http://www.kabytes.com/programacion/novedades-de-php-5-4-0/"> PHP es mi lenguaje favorito, una comunidad enorme, miles de sitios poderosos que lo [...]</a></p>
+							</li>
+													<li class="png_bg">
+								<span>&nbsp;</span>
+								<h5><a href="http://www.kabytes.com/diseno/compilado-de-texturas-vintage/">Compilado de texturas vintage</a></h5>
+								<p><a href="http://www.kabytes.com/diseno/compilado-de-texturas-vintage/"> He encontrado un sitio que tiene tal variedad de recursos vintage que me es imposible [...]</a></p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div id="bottom-autores" class="box-bottom left">
+					<h4>Autores</h4>
+					<ul>
+						<li>
+							<div class="gravatar left"><span>&nbsp;</span><img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/262a4da3c0c9ee096f80d5a3a794b208.jpg" class="avatar avatar-40 photo" height="40" width="40"></div>
+							<a href="http://www.facebook.com/pablo.j.suarez" class="contact fb left png_bg">Pablo Suarez</a>
+							<a href="http://twitter.com/#%21/Kabytes" class="contact tw left png_bg">@kabytes</a>
+							<div class="clear">&nbsp;</div>
+						</li>
+						<li>
+							<div class="gravatar left"><span>&nbsp;</span><img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/9b57b23b45389443a738722015532f98.jpg" class="avatar avatar-40 photo" height="40" width="40"></div>
+							<a href="http://www.facebook.com/TamiBang" class="contact fb left png_bg">Tamara Druetta</a>
+							<a href="http://twitter.com/#%21/Tamikob" class="contact tw left png_bg">@tamikob</a>
+							<div class="clear">&nbsp;</div>
+						</li>
+						<li>
+							<div class="gravatar left"><span>&nbsp;</span><img alt="" src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/9b6a560c7871c31269a8f5caf5f93093.jpg" class="avatar avatar-40 photo" height="40" width="40"></div>
+							<a href="http://www.facebook.com/isaluini" class="contact fb left png_bg">Isabel Luini</a>
+							<a href="http://twitter.com/#%21/isaluini" class="contact tw left png_bg">@isaluini</a>
+							<div class="clear">&nbsp;</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+			<!--/bottom-->
+		</div>
+		<!--/container-->
+	</div>	
+</div>
+	
+<footer id="footer">
+	<div class="container">
+		<p class="footer-element left">© 2006-2011 kabytes.com</p>
+		<div class="footer-element topbar center">
+			<ul id="menu-secciones-1" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25546"><a href="http://www.kabytes.com/nosotros/">Nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25545"><a href="http://www.kabytes.com/publicidad/">Publicidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25547"><a href="http://www.kabytes.com/contacto/">Contacto</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25544"><a href="http://www.kabytes.com/politica-de-privacidad/">Políticas</a></li>
+</ul>		</div>
+		<p class="footer-element right"><a href="http://holabeew.com/">code + design &gt; beew</a></p>
+	<div class="clear">&nbsp;</div>
+	</div>
+	<!--/container-->
+</footer>
+</div>
+
+
+<!-- Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Tutorial%20%20Como%20usar%20la%20API%20de%20Google%20Font%20_%20Kabytes_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-95145-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Google+ button -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'es'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+
+</body></html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using apc
+Page Caching using disk: enhanced
+Database Caching 49/78 queries in 0.047 seconds using apc
+
+Served from: www.kabytes.com @ 2012-10-15 15:58:09 -->
